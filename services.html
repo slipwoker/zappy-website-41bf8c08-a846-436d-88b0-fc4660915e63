@@ -1,0 +1,505 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שירותי עמילות מכס בישראל ושילוח מקצועי — צמפיונשיפ לוגיסטיקה</title>
+  <meta name="description" content="גלו את מגוון שירותי עמילות מכס בישראל והשילוח הבינלאומי שלנו. פתרונות לוגיסטיים מותאמים אישית ליבואנים ויצואנים. קבלו הצעת מחיר היום!">
+  <meta name="keywords" content="שירותי עמילות מכס בישראל, שילוח ועמילות מכס, יבוא מאירופה, שילוח בינלאומי, עמילות מכס">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '41bf8c08-a846-436d-88b0-fc4660915e63',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="assets/logo.webp" alt="צמפיונשיפ לוגיסטיקה" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>שירותי עמילות מכס בישראל ושילוח בינלאומי מקצועי</h1>
+      <h3>פתרונות לוגיסטיים מותאמים אישית לכל עסק - מיבוא מאירופה ועד יצוא לעולם</h3>
+    </div>
+  </section>
+
+  <section class="services-intro">
+    <div class="container">
+      <div class="intro-text">
+        <p>בצמפיונשיפ לוגיסטיקה, אנחנו מציעים מגוון רחב של שירותי שילוח ועמילות מכס שמותאמים בדיוק לצרכים של העסק שלכם. בין אם אתם חברת שילוח בינלאומי ליבואנים קטנה שמתחילה את דרכה, או עסק גדול עם צרכים לוגיסטיים מורכבים - יש לנו את הפתרון המושלם עבורכם. הצוות המקצועי שלנו מביא שנים של ניסיון בתחום היבוא והיצוא, ומתמחה במתן שירות אישי ומסור שחוסך לכם זמן, כסף ומתח מיותר.</p>
+        <p>אנחנו מבינים שכל משלוח הוא קריטי לעסק שלכם, ולכן אנחנו מתייחסים לכל פרויקט בתשומת לב מקסימלית. השירותים שלנו מכסים את כל שרשרת האספקה - מרגע שהמוצר יוצא מהספק ועד שהוא מגיע לידיכם או ללקוחות שלכם. עם טכנולוגיה מתקדמת, קשרים בינלאומיים חזקים ומחויבות למצוינות - אנחנו הכתובת המובילה לשירותי לוגיסטיקה בישראל.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-services">
+    <div class="container">
+      <h2>השירותים המקצועיים שלנו</h2>
+      
+      <div class="service-detail">
+        <div class="service-detail-content">
+          <h3>עמילות מכס מקצועית ומהירה</h3>
+          <p>שירותי עמילות מכס בישראל שלנו מבוססים על ידע עמוק של הרגולציות המקומיות והבינלאומיות. צוות עמילי המכס המוסמכים שלנו דואג לכל התהליכים הבירוקרטיים - החל מהכנת המסמכים הנדרשים, דרך חישוב המכסים והמיסים, ועד לטיפול בכל הליך שאלה או בדיקה של רשויות המכס. אנחנו עובדים בשיתוף פעולה הדוק עם רשויות המכס בכל הנמלים והשדות בישראל, מה שמאפשר לנו לזרז תהליכים ולמנוע עיכובים מיותרים.</p>
+          <p>הניסיון שלנו בתחום שילוח ועמילות מכס מאפשר לנו לזהות מראש בעיות פוטנציאליות ולטפל בהן לפני שהן הופכות לעיכובים יקרים. אנחנו מספקים ייעוץ מקצועי בנושאי סיווג מכס, הטבות מכס זמינות, ודרישות רגולטוריות מיוחדות. עם שירותי עמילות מכס בישראל שלנו, אתם יכולים להיות בטוחים שהמטענים שלכם יעברו את המכס בצורה חלקה, מהירה וחוקית לחלוטין.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-5" data-context="Professional customs broker working at modern office desk with multiple computer screens showing customs clearance software, import documents, and international shipping codes" src="assets/service-service-5.webp" alt="עמיל מכס מקצועי עובד על מסמכי יבוא במשרד מודרני">
+        </div>
+      </div>
+
+      <div class="service-detail reverse">
+        <div class="service-detail-content">
+          <h3>שילוח אווירי מהיר ואמין</h3>
+          <p>כאשר הזמן הוא קריטי, שירותי השילוח האווירי שלנו מספקים את הפתרון המושלם. אנחנו עובדים עם חברות תעופה מובילות ברחבי העולם, מה שמאפשר לנו להציע מגוון רחב של אפשרויות טיסה ותעריפים תחרותיים. בין אם מדובר במשלוח דחוף של חלקי חילוף, מוצרים רגישים לטמפרטורה, או סחורה בעלת ערך גבוה - יש לנו את הפתרון המתאים. השילוח האווירי שלנו כולל איסוף מהספק, אריזה מקצועית, טיפול בכל המסמכים והאישורים הנדרשים, ומעקב צמוד עד למסירה הסופית.</p>
+          <p>אנחנו מבינים שכל משלוח אווירי דורש תכנון מדויק ותיאום מושלם. לכן, הצוות שלנו זמין 24/7 כדי לוודא שהמשלוחים שלכם מגיעים בזמן ובמצב מושלם. עם מערכות מעקב מתקדמות, אתם יכולים לדעת בכל רגע היכן נמצא המטען שלכם ומתי הוא צפוי להגיע. השילוח האווירי שלנו משלב מהירות, אמינות ושירות אישי שאין שני לו.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-6" data-context="Large cargo airplane being loaded with freight containers at international airport terminal during golden hour, ground crew and cargo handlers coordinating the loading operation" src="assets/service-service-6.webp" alt="מטוס מטען נטען במכולות משא בשדה תעופה בינלאומי">
+        </div>
+      </div>
+
+      <div class="service-detail">
+        <div class="service-detail-content">
+          <h3>שילוח ימי כלכלי ויעיל</h3>
+          <p>עבור משלוחים גדולים יותר שבהם המחיר הוא שיקול מרכזי, שירותי השילוח הימי שלנו מספקים פתרון אידיאלי. אנחנו עובדים עם קווי שילוח מובילים ברחבי העולם, ומציעים שירותי FCL (מכולה מלאה) ו-LCL (פחות ממכולה מלאה) לכל היעדים. הניסיון שלנו ביבוא מאירופה והמזרח מאפשר לנו לתכנן מסלולי שילוח אופטימליים שחוסכים זמן וכסף. אנחנו מטפלים בכל שלבי התהליך - החל מהזמנת המכולה, דרך הסדרת המסמכים והביטוח, ועד למעקב אחר המשלוח ותיאום הפריקה בנמל היעד.</p>
+          <p>השילוח הימי שלנו כולל גם שירותי ייעוץ מקצועיים בנושאי אריזה, בחירת סוג המכולה המתאים, ותכנון לוגיסטי מיטבי. אנחנו מבינים שכל סוג של סחורה דורש טיפול שונה, ולכן אנחנו מציעים פתרונות מותאמים אישית - בין אם מדובר במוצרי מזון, ציוד תעשייתי, רהיטים או כל סוג אחר של מטען. עם קשרים חזקים בנמלים מרכזיים ברחבי העולם, אנחנו מבטיחים שילוח ימי חלק ויעיל.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-7" data-context="Massive container ship loaded with colorful shipping containers at busy international port, with cranes unloading cargo and port operations in full activity" src="assets/service-service-7.webp" alt="אוניית מכולות ענקית בנמל בינלאומי עמוס בפעילות">
+        </div>
+      </div>
+
+      <div class="service-detail reverse">
+        <div class="service-detail-content">
+          <h3>יבוא מאירופה - התמחות ייחודית</h3>
+          <p>אחד מתחומי ההתמחות המרכזיים שלנו הוא יבוא מאירופה. אנחנו מכירים לעומק את השווקים האירופאיים, הרגולציות המקומיות, ותהליכי השילוח הייחודיים של כל מדינה. הצוות שלנו עובד עם ספקים ושותפים לוגיסטיים באירופה, מה שמאפשר לנו לספק שירות מקיף מקצה לקצה. אנחנו מטפלים בכל ההיבטים של תהליך היבוא - החל מאיסוף הסחורה מהספק באירופה, דרך הסדרת כל המסמכים והאישורים הנדרשים (כולל EUR1, CMR ועוד), ועד לעמילות מכס ומסירה בישראל.</p>
+          <p>הניסיון שלנו ביבוא מאירופה כולל עבודה עם מגוון רחב של תעשיות - מוצרי אופנה, ציוד רפואי, מזון ומשקאות, חלקי רכב, ציוד תעשייתי ועוד. אנחנו מבינים את האתגרים הייחודיים של כל תעשייה, ומספקים פתרונות לוגיסטיים מותאמים אישית. עם שירותי עמילות מכס בישראל המקצועיים שלנו, אתם יכולים להיות בטוחים שהמוצרים שלכם מאירופה יגיעו בזמן, במצב מושלם ובעלויות אופטימליות.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-8" data-context="European logistics hub with modern warehouse facility, trucks being loaded with goods, and shipping containers marked with European flags, showing efficient cross-border trade operations" src="assets/service-service-8.webp" alt="מרכז לוגיסטיקה אירופאי עם מחסן מודרני ומשאיות נטענות">
+        </div>
+      </div>
+
+      <div class="service-detail">
+        <div class="service-detail-content">
+          <h3>אחסון וניהול מלאי חכם</h3>
+          <p>שירותי האחסון שלנו מספקים פתרון מושלם לעסקים שזקוקים למקום מאובטח ומאורגן לאחסן את המוצרים שלהם. המחסנים שלנו מצוידים בטכנולוגיה מתקדמת לניהול מלאי, מערכות אבטחה מתקדמות, ובקרת אקלים לסוגי סחורה רגישים. אנחנו מציעים פתרונות אחסון גמישים - החל מאחסון לטווח קצר לצורכי שילוח ועמילות מכס, ועד לאחסון לטווח ארוך כולל שירותי הפצה. המערכת הממוחשבת שלנו מאפשרת לכם לעקוב אחר המלאי שלכם בזמן אמת, לקבל דוחות מפורטים, ולנהל את המלאי שלכם ביעילות מקסימלית.</p>
+          <p>בנוסף לאחסון בסיסי, אנחנו מציעים מגוון שירותים נוספים - הרכבת מוצרים, אריזה מחדש, תיוג, בדיקות איכות ועוד. הצוות שלנו מיומן בטיפול במגוון רחב של סוגי סחורה, ומבטיח שהמוצרים שלכם מטופלים בזהירות מקסימלית. עם פתרונות האחסון וניהול המלאי שלנו, אתם יכולים להתמקד בגדילת העסק שלכם, בעוד אנחנו דואגים לכל ההיבטים הלוגיסטיים.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-9" data-context="Modern automated warehouse interior with high shelving systems, robotic inventory management, barcode scanners, and warehouse workers using tablets to track inventory in real-time" src="assets/service-service-9.webp" alt="מחסן אוטומטי מודרני עם מערכת ניהול מלאי ממוחשבת">
+        </div>
+      </div>
+
+      <div class="service-detail reverse">
+        <div class="service-detail-content">
+          <h3>ייעוץ לוגיסטי ואופטימיזציה</h3>
+          <p>מעבר לשירותי השילוח והעמילות הבסיסיים, אנחנו מציעים שירותי ייעוץ לוגיסטי מקצועיים שעוזרים לעסקים לייעל את שרשרת האספקה שלהם. הצוות שלנו מנתח את התהליכים הלוגיסטיים הקיימים שלכם, מזהה נקודות חולשה והזדמנויות לשיפור, ומציע פתרונות מעשיים לחיסכון בעלויות וזמן. אנחנו עוזרים לכם לבחור את אמצעי השילוח המתאימים ביותר, למצוא ספקים אמינים, ולבנות תהליכים לוגיסטיים יעילים שמתאימים לצרכים הספציפיים של העסק שלכם.</p>
+          <p>הייעוץ שלנו כולל גם הדרכה והכשרה של הצוותים שלכם בנושאי לוגיסטיקה בינלאומית, רגולציות מכס, ותקני שילוח בינלאומיים. אנחנו מאמינים שידע הוא כוח, ולכן אנחנו משקיעים בהעברת הידע שלנו ללקוחות שלנו. עם שירותי הייעוץ הלוגיסטי שלנו, אתם מקבלים לא רק פתרון לבעיה נוכחית, אלא גם כלים וידע שיעזרו לכם להצליח בטווח הארוך.</p>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-10" data-context="Business consultants analyzing logistics data on large digital screens showing supply chain optimization charts, shipping routes, and cost analysis in modern conference room" src="assets/service-service-10.webp" alt="יועצים עסקיים מנתחים נתוני לוגיסטיקה על מסכים דיגיטליים">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-benefits">
+    <div class="container">
+      <h2>למה לבחור בשירותי שילוח ועמילות מכס שלנו?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-box">
+          <i class="fas fa-globe"></i>
+          <h3>כיסוי גלובלי</h3>
+          <p>שותפויות עם ספקי שילוח מובילים ברחבי העולם מאפשרות לנו לספק שירות לכל יעד על פני הגלובוס.</p>
+        </div>
+        <div class="benefit-box">
+          <i class="fas fa-user-tie"></i>
+          <h3>צוות מקצועי</h3>
+          <p>עמילי מכס מוסמכים ומומחי לוגיסטיקה עם שנים של ניסיון בתחום היבוא והיצוא הבינלאומי.</p>
+        </div>
+        <div class="benefit-box">
+          <i class="fas fa-chart-line"></i>
+          <h3>טכנולוגיה מתקדמת</h3>
+          <p>מערכות מעקב וניהול מלאי חדישות שמאפשרות שקיפות מלאה ושליטה בזמן אמת על המשלוחים שלכם.</p>
+        </div>
+        <div class="benefit-box">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h3>מחירים תחרותיים</h3>
+          <p>קשרים חזקים עם ספקים מאפשרים לנו להציע תעריפים אטרקטיביים מאוד ללא פשרות על איכות השירות.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>מעוניינים בשירותי עמילות מכס בישראל מקצועיים?</h2>
+        <p>צרו איתנו קשר עוד היום לקבלת הצעת מחיר מפורטת ומותאמת אישית. הצוות שלנו ישמח לענות על כל שאלה ולספק לכם את הפתרון הלוגיסטי המושלם לעסק שלכם.</p>
+        <a href="/contact" class="btn btn-primary">קבלו הצעת מחיר</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_number]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 צמפיונשיפ לוגיסטיקה. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="[social_facebook]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="[social_instagram]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="[social_whatsapp]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="[social_linkedin]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '41bf8c08-a846-436d-88b0-fc4660915e63';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
